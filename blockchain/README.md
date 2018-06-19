@@ -8,7 +8,7 @@ docker run -it -p 8545:8545 -p 30303:30303 \
          -rpc --rpcaddr "0.0.0.0" console
 ```
 
-###Own blockchain
+### Own blockchain
 
 #### Init new blockchain
 The first command is used to seed your network with the genesis block and set the datadir.
