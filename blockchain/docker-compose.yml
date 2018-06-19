@@ -1,0 +1,12 @@
+version: "3"
+services:
+  geth:
+    image: ethereum/client-go
+    container_name: ethereum_geth
+    ports:
+      - "8545:8545"
+      - "30303:30303"
+    volumes:
+      - /${HOME}/ethereum:/root/.ethereum
+#   TODO:
+    command: -rpc --rpcaddr "0.0.0.0" console
