@@ -7,7 +7,7 @@ contract HelloWorldContract {
 
     string message;
 
-    function HelloWorldContract() public {
+    constructor() public {
         owner = msg.sender;
         message = 'Hello world';
         counter = 0;
